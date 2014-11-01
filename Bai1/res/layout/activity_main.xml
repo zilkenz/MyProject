@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Login" />
+    <TextView 
+        android:id="@+id/txtdnhap"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtlogin"
+        android:layout_marginTop="10dp"
+        android:text="Ten Dang Nhap"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/txtmkhau"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtdnhap"
+        android:layout_marginTop="10dp"
+        android:text="Mat Khau"
+        />
+    <Button 
+        android:id="@+id/btnlogin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtmkhau"
+        android:layout_marginTop="10dp"
+        android:text="Dang Nhap"
+        />
+    <Button 
+        android:id="@+id/btnnhaplai"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginTop="10dp"
+        android:text="Nhap Lai"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtdnhap"
+        android:layout_below="@+id/txtlogin"
+        android:layout_toRightOf="@+id/btnlogin"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtmkhau"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="10" />
+
+</RelativeLayout>
